@@ -1,7 +1,8 @@
 package br.com.alura.bytebank
 
-import br.com.alura.bytebank.teste.testaNullable
-
 fun main() {
-    testaNullable()
+    println(soma(1, 5))
+    println(soma(1, 5))
 }
+
+fun soma(a: Int, b: Int) : Int = a + b
