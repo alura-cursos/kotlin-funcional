@@ -1,16 +1,17 @@
 package br.com.alura.bytebank
 
 fun main() {
-    testaTipoFuncaoReferencia()
-    testaTipoFuncaoClasse()
-//    val minhaFuncaoLambda = {
-//        println("Executa como lambda")
-//    }
-//    println(minhaFuncaoLambda())
-//    val minhaFuncaoAnonima: () -> Unit = fun(){
-//        println("Executa como anonima")
-//    }
-//    println(minhaFuncaoAnonima())
+//    testaTipoFuncaoReferencia()
+//    testaTipoFuncaoClasse()
+    val minhaFuncaoLambda = { a: Int, b: Int ->
+        a + b
+    }
+    println(minhaFuncaoLambda(15, 10))
+
+    val minhaFuncaoAnonima = fun(a: Int, b: Int) : Int {
+        return a + b
+    }
+    println(minhaFuncaoAnonima(20, 10))
 }
 
 fun testaTipoFuncaoClasse() {
